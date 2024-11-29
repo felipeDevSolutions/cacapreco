@@ -24,7 +24,7 @@ const Cadastro = () => {
     setOpenSnackbar(false); // Close any open snackbar
 
     try {
-      const response = await fetch('http://localhost:5000/usuarios/cadastrar', {
+      const response = await fetch('https://cacapreco-backend.onrender.com/usuarios/cadastrar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password, nome }),
