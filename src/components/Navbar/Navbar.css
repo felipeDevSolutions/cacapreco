@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #00dbca; /* Cor de fundo da navbar */
+    color: #fff; /* Cor do texto */
+    padding: 5px 0; /* Espaçamento interno */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 100%; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 30px; /* Espaçamento interno */
+  }
+  
+  
+  .navbar-logo {
+    height: 50px; /* Defina a altura desejada para o logo */
+    width: auto; /* A largura será ajustada automaticamente */
+    padding: 0;
+    margin: 0;
+
+}
+  
+  
+  .nav-menu {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .nav-item {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+  
+  }
+  
+  
+  .nav-links {
+    text-decoration: none; /* Remove a decoração do link */
+    color: #fff; /* Cor do texto do link */
+    padding: 5px 10px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  }
+  
+  
+  .nav-links:hover {
+    background-color: #00ab9d; /* Cor de fundo ao passar o mouse */
+  }
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+
+  .nav-menu{
+    width: 100%;
+  }
+
+
+  .nav-menu.active {
+    transform: translateY(0); /* Mostra o menu ao clicar no hambúrguer */
+  }
+
+  .nav-item {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .navbar-container {
+    flex-direction: column; /* Menu e logo em colunas */
+  }
+
+  .nav-links {
+    width: 100%;
+    display: block; /* Transforma em bloco para ocupar toda a largura */
+    padding: 5px;
+  }
+
+  .menu-icon {
+    display: block; /* Mostra o ícone do hambúrguer */
+    cursor: pointer;
+  }
+  .menu-icon:hover{
+      background-color: #00ab9d;
+  }
+}
+
+/* Icónes do menu */
+.menu-icon {
+    display: none; /* Esconde por padrão */
+    font-size: 25px; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+}
+.menu-icon span{
+    display: block;
+    height: 3px;
+    width: 35px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+.menu-icon.active span:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-icon.active span:nth-child(2){
+    opacity: 0;
+}
+.menu-icon.active span:nth-child(3){
+    transform: rotate(-45deg) translate(7px, -5px);
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container p{
+  width: 80%;
+  font-size:0.5rem ;
+}

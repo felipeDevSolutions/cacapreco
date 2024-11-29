@@ -1,0 +1,12 @@
+.footer {
+    background-color: #e4e4e4; /* Cor de fundo escura */
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
