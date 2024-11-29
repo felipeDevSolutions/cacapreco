@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://cacapreco-backend.onrender.com', // URL da API
+  baseURL: 'https://cacaprecob.onrender.com', // URL da API
 });
 
 // Adiciona o token ao header de autorização para todas as requisições
